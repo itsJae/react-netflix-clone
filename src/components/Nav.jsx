@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
 import "./Nav.css";
@@ -9,7 +8,6 @@ export default function Nav() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log("window.scrollY", window.scrollY);
       if (window.scrollY > 50) {
         setShow(true);
       } else {

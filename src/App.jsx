@@ -42,6 +42,7 @@ function App() {
         fetchUrl={requests.fetchComedyMovies}
         isLargeRow={false}
       />
+      <Footer />
     </div>
   );
 }

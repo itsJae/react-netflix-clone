@@ -21,6 +21,7 @@ function Footer() {
               Terms of Service
             </FooterLink>
           </FooterLinkContent>
+          
           <FooterDescContainer>
             <FooterDescRights>Netflix Rights Reserved.</FooterDescRights>
           </FooterDescContainer>

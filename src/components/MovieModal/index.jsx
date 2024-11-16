@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./MovieModal.css";
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 
 function MovieModal({
   backdrop_path,
@@ -12,7 +13,7 @@ function MovieModal({
   setModalOpen,
 }) {
   const ref = useRef();
-  useOnclickOutside(ref, () => {
+  useOnClickOutside(ref, () => {
     setModalOpen(false);
   });
   return (

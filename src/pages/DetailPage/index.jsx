@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import axios from "../../api/axios";
 
 function DetailPage() {
   const { movieId } = useParams();
-  us;
+  const [movie, setMovie] = useState({});
 
   useEffect(() => {
     async function fetchData() {
@@ -13,7 +14,7 @@ function DetailPage() {
     fetchData();
   }, [movieId]);
 
-  if (!movie) return <div>...loading</div>;
+  if (!movie.backdrop_path) return <div>...loading</div>;
 
   return (
     <section>

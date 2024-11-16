@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "../../api/axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./SearchPage.css";
-import { useDebounce } from "../hooks/useDebounce";
+import { useDebounce } from "../../hooks/useDebounce";
 
 function SearchPage() {
   const navigate = useNavigate();

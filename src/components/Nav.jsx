@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Nav.css";
 
 export default function Nav() {
@@ -28,14 +28,13 @@ export default function Nav() {
 
   return (
     <nav className={`nav ${show && "nav__black"} `}>
-      <button
-        type="button"
+      <Link
+        to="/"
         className="nav__logo"
-        onClick={() => (window.location.href = "/")}
         aria-label="Netflix home"
       >
         NETFLIX
-      </button>
+      </Link>
 
       <input
         value={searchValue}
